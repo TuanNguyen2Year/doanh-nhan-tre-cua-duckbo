@@ -37,13 +37,14 @@ export const menuItems: MenuItem[] = [
       { label: 'Doanh nhân doanh nghiệp', href: '/danh-muc/doanh-nhan-doanh-nghiep' },
     ],
   },
-  { label: 'ĐÀO TẠO', href: '/danh-muc/dao-tao' },
+  { label: 'ĐÀO TẠO', href: '/dao-tao' },
   { label: 'LIÊN HỆ', href: '/lien-he' },
   {
     label: 'HỖ TRỢ',
-    href: '/ho-tro',
+    href: '/danh-muc/ket-noi-giao-thuong',
     children: [
       { label: 'Kết nối giao thương', href: '/danh-muc/ket-noi-giao-thuong' },
+      { label: 'Đăng ký hội viên', href: '/dang-ky' },
     ],
   },
 ];
