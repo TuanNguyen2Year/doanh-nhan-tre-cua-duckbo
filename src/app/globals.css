@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --primary: #1e3a6e;
+  --primary-dark: #152a52;
+  --primary-light: #2a4f8f;
+  --accent: #d4a843;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  background: #f5f5f5;
+}
+
+@layer components {
+  .section-header {
+    @apply bg-primary text-white px-4 py-2 text-sm font-bold rounded-t-md flex justify-between items-center;
+  }
+  
+  .section-header a {
+    @apply text-white text-xs hover:underline;
+  }
+
+  .article-card {
+    @apply bg-white rounded-md overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+
+  .article-card-horizontal {
+    @apply flex gap-3 py-3 border-b border-gray-100 last:border-b-0;
+  }
+
+  .sidebar-article {
+    @apply flex gap-3 py-2 border-b border-gray-100 last:border-b-0;
+  }
+
+  .tag-badge {
+    @apply absolute top-2 left-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded;
+  }
+
+  .breadcrumb {
+    @apply flex items-center gap-1 text-sm text-gray-500 mb-4;
+  }
+
+  .breadcrumb a {
+    @apply hover:text-primary hover:underline;
+  }
+}
+
+/* Slider dots */
+.slider-dots {
+  @apply flex gap-2 justify-center mt-2;
+}
+
+.slider-dot {
+  @apply w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all;
+}
+
+.slider-dot.active {
+  @apply bg-white w-4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Article content */
+.article-content p {
+  @apply mb-4 leading-7;
+}
+
+.article-content img {
+  @apply max-w-full h-auto my-4 mx-auto rounded;
+}
+
+.article-content h2 {
+  @apply text-xl font-bold mb-3 mt-6;
+}
+
+.article-content h3 {
+  @apply text-lg font-bold mb-2 mt-4;
+}
