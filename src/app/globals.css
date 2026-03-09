@@ -98,3 +98,17 @@ body {
 .article-content h3 {
   @apply text-lg font-bold mb-2 mt-4;
 }
+
+/* Marquee animation for news ticker */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
