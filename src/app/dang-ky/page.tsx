@@ -48,14 +48,9 @@ export default function DangKyPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <svg viewBox="0 0 100 100" className="w-16 h-16 mx-auto mb-3">
-              <circle cx="50" cy="50" r="48" fill="#1e3a6e" />
-              <circle cx="50" cy="50" r="42" fill="#c41e3a" />
-              <path d="M50 12 L55 40 L85 40 L60 55 L70 85 L50 65 L30 85 L40 55 L15 40 L45 40 Z" fill="#FFD700" />
-              <circle cx="50" cy="50" r="20" fill="#c41e3a" />
-              <text x="50" y="48" textAnchor="middle" fill="#FFD700" fontSize="8" fontWeight="bold">HỘI DNT</text>
-              <text x="50" y="58" textAnchor="middle" fill="#FFD700" fontSize="6">ĐỒNG NAI</text>
-            </svg>
+            <div className="w-20 h-20 relative">
+                <img src="/image/logo.png" alt="Logo" className="object-cover" />
+            </div>
           </Link>
           <h1 className="text-2xl font-bold text-gray-900">Đăng Ký Thành Viên</h1>
           <p className="text-gray-500 text-sm mt-1">Hội Doanh nhân trẻ tỉnh Đồng Nai</p>
